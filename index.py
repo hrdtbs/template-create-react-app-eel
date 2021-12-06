@@ -11,12 +11,7 @@ def hello():
 if __name__ == '__main__':
     if sys.argv[1] == '--develop':
         eel.init('client')
-        eel.start({
-            'port': 3000
-        }, options={
-            'port': 8888,
-            'host': 'localhost',
-        })
+        eel.start({"port": 3000}, host="localhost", port=8888)
     else:
         eel.init('build')
         eel.start('index.html')
