@@ -3,24 +3,34 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.3.1",
-    "react-dom": "^16.3.1",
-    "react-scripts": "1.1.4"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0"
   },
   "scripts": {
     "start:js": "react-scripts start",
     "build:js": "react-scripts build",
     "start:eel": "python3 index.py --develop",
-    "build:eel":
-      "python3 -m eel index.py build --onefile --noconsole --name react-eel-app",
+    "build:eel": "python3 -m eel index.py build --onefile --noconsole --name react-eel-app",
     "clean:build": "rm -rf build dist",
-
     "start": "npm-run-all -p start:*",
     "build": "npm-run-all clean:build build:*",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.2"
+    "npm-run-all": "^4.1.5"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
