@@ -7,19 +7,14 @@
 You’ll need to have Python >= 3.6, Eel, pyinstaller.
 
 ```
-$ pip3 install eel
-$ pip3 install pyinstaller
-```
-
-## Develop on Browser
-
-```
-$ yarn start:js
+$ python3 -m pip install eel
+$ python3 -m pip install pyinstaller
 ```
 
 ## Develop on GUI
 
 ```
+$ yarn install
 $ yarn start
 ```
 
